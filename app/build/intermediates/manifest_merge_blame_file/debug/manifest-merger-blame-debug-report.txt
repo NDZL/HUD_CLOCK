@@ -1,0 +1,55 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.symbol.democlock"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\dev\AndroidStudioProjects\ZebraHudSdk\DemoClock\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->C:\dev\AndroidStudioProjects\ZebraHudSdk\DemoClock\app\src\main\AndroidManifest.xml
+10    <!-- For watching for HUD connect and disconnect -->
+11    <uses-permission android:name="android.permission.USB_PERMISSION" /> <!-- For Hudcasting and Hud screen capture -->
+11-->[:ZebraHud] C:\dev\AndroidStudioProjects\ZebraHudSdk\DemoClock\ZebraHud\build\.transforms\c1f0201ae112337f2f1b0afd975dbc4f\ZebraHud\AndroidManifest.xml:12:5-73
+11-->[:ZebraHud] C:\dev\AndroidStudioProjects\ZebraHudSdk\DemoClock\ZebraHud\build\.transforms\c1f0201ae112337f2f1b0afd975dbc4f\ZebraHud\AndroidManifest.xml:12:22-70
+12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+12-->[:ZebraHud] C:\dev\AndroidStudioProjects\ZebraHudSdk\DemoClock\ZebraHud\build\.transforms\c1f0201ae112337f2f1b0afd975dbc4f\ZebraHud\AndroidManifest.xml:15:5-80
+12-->[:ZebraHud] C:\dev\AndroidStudioProjects\ZebraHudSdk\DemoClock\ZebraHud\build\.transforms\c1f0201ae112337f2f1b0afd975dbc4f\ZebraHud\AndroidManifest.xml:15:22-77
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+13-->[:ZebraHud] C:\dev\AndroidStudioProjects\ZebraHudSdk\DemoClock\ZebraHud\build\.transforms\c1f0201ae112337f2f1b0afd975dbc4f\ZebraHud\AndroidManifest.xml:16:5-81
+13-->[:ZebraHud] C:\dev\AndroidStudioProjects\ZebraHudSdk\DemoClock\ZebraHud\build\.transforms\c1f0201ae112337f2f1b0afd975dbc4f\ZebraHud\AndroidManifest.xml:16:22-78
+14
+15    <application
+15-->C:\dev\AndroidStudioProjects\ZebraHudSdk\DemoClock\app\src\main\AndroidManifest.xml:5:5-18:19
+16        android:allowBackup="true"
+16-->C:\dev\AndroidStudioProjects\ZebraHudSdk\DemoClock\app\src\main\AndroidManifest.xml:6:9-35
+17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+17-->[androidx.core:core:1.0.1] C:\Users\cxnt48\.gradle\caches\transforms-2\files-2.1\e9dd331d98e992b525484d967276a689\core-1.0.1\AndroidManifest.xml:22:18-86
+18        android:debuggable="true"
+19        android:icon="@mipmap/ic_launcher"
+19-->C:\dev\AndroidStudioProjects\ZebraHudSdk\DemoClock\app\src\main\AndroidManifest.xml:7:9-43
+20        android:label="@string/app_name"
+20-->C:\dev\AndroidStudioProjects\ZebraHudSdk\DemoClock\app\src\main\AndroidManifest.xml:8:9-41
+21        android:supportsRtl="true"
+21-->C:\dev\AndroidStudioProjects\ZebraHudSdk\DemoClock\app\src\main\AndroidManifest.xml:9:9-35
+22        android:testOnly="true"
+23        android:theme="@style/AppTheme" >
+23-->C:\dev\AndroidStudioProjects\ZebraHudSdk\DemoClock\app\src\main\AndroidManifest.xml:10:9-40
+24        <activity android:name="com.symbol.democlock.MainActivity" >
+24-->C:\dev\AndroidStudioProjects\ZebraHudSdk\DemoClock\app\src\main\AndroidManifest.xml:11:9-17:20
+24-->C:\dev\AndroidStudioProjects\ZebraHudSdk\DemoClock\app\src\main\AndroidManifest.xml:11:19-47
+25            <intent-filter>
+25-->C:\dev\AndroidStudioProjects\ZebraHudSdk\DemoClock\app\src\main\AndroidManifest.xml:12:13-16:29
+26                <action android:name="android.intent.action.MAIN" />
+26-->C:\dev\AndroidStudioProjects\ZebraHudSdk\DemoClock\app\src\main\AndroidManifest.xml:13:17-69
+26-->C:\dev\AndroidStudioProjects\ZebraHudSdk\DemoClock\app\src\main\AndroidManifest.xml:13:25-66
+27
+28                <category android:name="android.intent.category.LAUNCHER" />
+28-->C:\dev\AndroidStudioProjects\ZebraHudSdk\DemoClock\app\src\main\AndroidManifest.xml:15:17-77
+28-->C:\dev\AndroidStudioProjects\ZebraHudSdk\DemoClock\app\src\main\AndroidManifest.xml:15:27-74
+29            </intent-filter>
+30        </activity>
+31    </application>
+32
+33</manifest>

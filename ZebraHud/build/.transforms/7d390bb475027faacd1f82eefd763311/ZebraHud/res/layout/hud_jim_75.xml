@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/hud_width"
+    android:layout_height="@dimen/hud_height"
+    android:layout_gravity="center"
+    android:background="@color/hud_back"
+    android:paddingStart="@dimen/hud_width75_margin"
+    android:paddingTop="@dimen/hud_height75_margin"
+    android:paddingEnd="@dimen/hud_width75_margin"
+    android:paddingBottom="@dimen/hud_height75_margin">
+
+    <include
+        android:id="@+id/constraint"
+        layout="@layout/hud_jim" />
+</FrameLayout>
