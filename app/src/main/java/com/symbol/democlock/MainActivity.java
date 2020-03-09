@@ -25,9 +25,10 @@ public class MainActivity extends AppCompatActivity implements ZebraHud.EventLis
     //static final String TIME_FORMAT = "hh:mm:ss a";
     static final String TIME_FORMAT = "HH:mm:ss";
     private ZebraHud hud = new ZebraHud();
-    private byte[] cachedImage = null;
-    private TextView viewText = null;
-    private ImageView hudImage = null;
+
+//    private byte[] cachedImage = null;
+//    private TextView viewText = null;
+//    private ImageView hudImage = null;
 
     // our private Handler messages
     enum HandlerMsg {
@@ -40,8 +41,9 @@ public class MainActivity extends AppCompatActivity implements ZebraHud.EventLis
         super.onCreate(savedInstanceState);
         Log.d(TAG, "onCreate");
         setContentView(R.layout.activity_main);
-        viewText = findViewById(R.id.text);
-        hudImage = findViewById(R.id.hudimage);
+
+  //      viewText = findViewById(R.id.text);
+  //      hudImage = findViewById(R.id.hudimage);
 
         btClickMe = findViewById(R.id.btClickMe);
         btClickMe.setOnClickListener(new View.OnClickListener() {
@@ -89,13 +91,17 @@ public class MainActivity extends AppCompatActivity implements ZebraHud.EventLis
     // ZebraHud.EventListener
     @Override
     public void onConnected(Boolean connected) {
+        /*
         if (connected) hud.showCachedImage(cachedImage); // handle hud disconnect/reconnect
         else hudImage.setImageBitmap(null);
+
+         */
     }
 
     // ZebraHud.EventListener
     @Override
     public void onImageUpdated(byte[] image) {
+        /*
         cachedImage = image; // handle hud disconnect/reconnect
         // mirror the hud image on the device-screen
         hudImage.setImageBitmap(
@@ -105,6 +111,8 @@ public class MainActivity extends AppCompatActivity implements ZebraHud.EventLis
                                 0,
                                 image.length)
                         : null);
+
+         */
     }
 
     // ZebraHud.EventListener
@@ -112,6 +120,7 @@ public class MainActivity extends AppCompatActivity implements ZebraHud.EventLis
     public void onCameraImage(Bitmap bitmap) {
     }
 
+    /*
     @SuppressLint("SimpleDateFormat")
     private void updateClock() {
         String time = new SimpleDateFormat(TIME_FORMAT).format(new Date(System.currentTimeMillis()));
@@ -119,6 +128,8 @@ public class MainActivity extends AppCompatActivity implements ZebraHud.EventLis
         hud.showMessage("RED-ZONE TIME", time);
         Log.d(TAG, "updateClock");
     }
+
+     */
 
     /*
     private static class MyHandler extends Handler {
