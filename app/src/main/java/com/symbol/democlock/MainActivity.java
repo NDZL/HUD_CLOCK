@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity implements ZebraHud.EventLis
     @Override
     protected void onPause() {
         super.onPause();
-        hud.onPause(this);
+    //    hud.onPause(this);
         //myHandler.removeMessages(HandlerMsg.TIMER.ordinal());
         Log.d(TAG, "onPause");
     }
@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity implements ZebraHud.EventLis
     @Override
     protected void onResume() {
         super.onResume();
-        hud.onResume(this, this);
+   //     hud.onResume(this, this);
         //myHandler.sendEmptyMessage(HandlerMsg.TIMER.ordinal());
         Log.d(TAG, "onResume");
     }
