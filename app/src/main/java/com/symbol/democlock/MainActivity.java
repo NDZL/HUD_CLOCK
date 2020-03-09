@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity implements ZebraHud.EventLis
     //static final String TIME_FORMAT = "hh:mm:ss a";
     static final String TIME_FORMAT = "HH:mm:ss";
     private ZebraHud hud = new ZebraHud();
+    int n=0;
 
 //    private byte[] cachedImage = null;
 //    private TextView viewText = null;
@@ -49,7 +50,7 @@ public class MainActivity extends AppCompatActivity implements ZebraHud.EventLis
         btClickMe.setOnClickListener(new View.OnClickListener() {
                                          @Override
                                          public void onClick(View view) {
-                                             hud.showMessage("CXNT48", "THIS IS HD4K");
+                                             hud.showMessage("CXNT48", "THIS IS HD4K "+ n++);
                                          }
                                      }
 
