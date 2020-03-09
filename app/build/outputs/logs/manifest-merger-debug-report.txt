@@ -5,7 +5,7 @@ INJECTED from C:\dev\AndroidStudioProjects\ZebraHudSdk\DemoClock\app\src\main\An
 INJECTED from C:\dev\AndroidStudioProjects\ZebraHudSdk\DemoClock\app\src\main\AndroidManifest.xml:2:1-19:12
 INJECTED from C:\dev\AndroidStudioProjects\ZebraHudSdk\DemoClock\app\src\main\AndroidManifest.xml:2:1-19:12
 MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\cxnt48\.gradle\caches\transforms-2\files-2.1\966705fa1586529d1007328cb45c977f\appcompat-1.0.2\AndroidManifest.xml:17:1-22:12
-MERGED from [:ZebraHud] C:\dev\AndroidStudioProjects\ZebraHudSdk\DemoClock\ZebraHud\build\.transforms\c1f0201ae112337f2f1b0afd975dbc4f\ZebraHud\AndroidManifest.xml:2:1-18:12
+MERGED from [:ZebraHud] C:\dev\AndroidStudioProjects\ZebraHudSdk\DemoClock\ZebraHud\build\.transforms\c1f0201ae112337f2f1b0afd975dbc4f\ZebraHud\AndroidManifest.xml:2:1-19:12
 MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\cxnt48\.gradle\caches\transforms-2\files-2.1\e2ffe66c9235beae30265ed3393325a3\fragment-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\cxnt48\.gradle\caches\transforms-2\files-2.1\d830a7a5069b863358e2206e15696f27\vectordrawable-animated-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\cxnt48\.gradle\caches\transforms-2\files-2.1\7e5752981e19721716572389d8e731d5\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -160,3 +160,7 @@ uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from [:ZebraHud] C:\dev\AndroidStudioProjects\ZebraHudSdk\DemoClock\ZebraHud\build\.transforms\c1f0201ae112337f2f1b0afd975dbc4f\ZebraHud\AndroidManifest.xml:16:5-81
 	android:name
 		ADDED from [:ZebraHud] C:\dev\AndroidStudioProjects\ZebraHudSdk\DemoClock\ZebraHud\build\.transforms\c1f0201ae112337f2f1b0afd975dbc4f\ZebraHud\AndroidManifest.xml:16:22-78
+uses-permission#android.permission.INTERNET
+ADDED from [:ZebraHud] C:\dev\AndroidStudioProjects\ZebraHudSdk\DemoClock\ZebraHud\build\.transforms\c1f0201ae112337f2f1b0afd975dbc4f\ZebraHud\AndroidManifest.xml:17:5-67
+	android:name
+		ADDED from [:ZebraHud] C:\dev\AndroidStudioProjects\ZebraHudSdk\DemoClock\ZebraHud\build\.transforms\c1f0201ae112337f2f1b0afd975dbc4f\ZebraHud\AndroidManifest.xml:17:22-64

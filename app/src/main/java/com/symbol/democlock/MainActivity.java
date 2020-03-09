@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -32,6 +34,7 @@ public class MainActivity extends AppCompatActivity implements ZebraHud.EventLis
         TIMER
     }
 
+    Button btClickMe;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +42,17 @@ public class MainActivity extends AppCompatActivity implements ZebraHud.EventLis
         setContentView(R.layout.activity_main);
         viewText = findViewById(R.id.text);
         hudImage = findViewById(R.id.hudimage);
+
+        btClickMe = findViewById(R.id.btClickMe);
+        btClickMe.setOnClickListener(new View.OnClickListener() {
+                                         @Override
+                                         public void onClick(View view) {
+                                             hud.showMessage("CXNT48", "THIS IS HD4K");
+                                         }
+                                     }
+
+
+        );
     }
 
     @Override
@@ -60,7 +74,7 @@ public class MainActivity extends AppCompatActivity implements ZebraHud.EventLis
     protected void onPause() {
         super.onPause();
         hud.onPause(this);
-        myHandler.removeMessages(HandlerMsg.TIMER.ordinal());
+        //myHandler.removeMessages(HandlerMsg.TIMER.ordinal());
         Log.d(TAG, "onPause");
     }
 
@@ -68,7 +82,7 @@ public class MainActivity extends AppCompatActivity implements ZebraHud.EventLis
     protected void onResume() {
         super.onResume();
         hud.onResume(this, this);
-        myHandler.sendEmptyMessage(HandlerMsg.TIMER.ordinal());
+        //myHandler.sendEmptyMessage(HandlerMsg.TIMER.ordinal());
         Log.d(TAG, "onResume");
     }
 
@@ -106,10 +120,11 @@ public class MainActivity extends AppCompatActivity implements ZebraHud.EventLis
         Log.d(TAG, "updateClock");
     }
 
+    /*
     private static class MyHandler extends Handler {
         private final WeakReference<MainActivity> activity;
 
-        MyHandler(final MainActivity parent) {
+  //      MyHandler(final MainActivity parent) {
             activity = new WeakReference<>(parent);
         }
 
@@ -126,6 +141,6 @@ public class MainActivity extends AppCompatActivity implements ZebraHud.EventLis
             }
         }
     }
-
-    private MyHandler myHandler = new MyHandler(this);
+*/
+//    private MyHandler myHandler = new MyHandler(this);
 }

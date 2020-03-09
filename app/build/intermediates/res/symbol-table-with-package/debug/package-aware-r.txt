@@ -493,7 +493,6 @@ dimen hud_header_height
 dimen hud_header_icon
 dimen hud_header_icon_pad
 dimen hud_header_textsize
-dimen hud_height
 dimen hud_height75_margin
 dimen hud_height80_margin
 dimen hud_height85_margin
@@ -502,7 +501,6 @@ dimen hud_height95_margin
 dimen hud_message_maxsize
 dimen hud_midword_maxsize
 dimen hud_text_granularity
-dimen hud_width
 dimen hud_width75_margin
 dimen hud_width80_margin
 dimen hud_width85_margin
@@ -664,6 +662,7 @@ id async
 id beginning
 id blocking
 id bottom
+id btClickMe
 id buttonPanel
 id center
 id center_horizontal
@@ -769,6 +768,7 @@ id up
 id useLogo
 id withText
 id wrap_content
+id zebra_hud_margin
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
 integer cancel_button_image_alpha
@@ -807,13 +807,9 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
 layout hud_app_interrupted
+layout hud_frame
+layout hud_image
 layout hud_jim
-layout hud_jim_100
-layout hud_jim_75
-layout hud_jim_80
-layout hud_jim_85
-layout hud_jim_90
-layout hud_jim_95
 layout hud_message
 layout notification_action
 layout notification_action_tombstone

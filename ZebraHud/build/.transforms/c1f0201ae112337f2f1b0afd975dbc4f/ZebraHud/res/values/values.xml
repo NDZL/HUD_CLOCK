@@ -29,7 +29,6 @@
     <dimen name="hud_header_icon">48dp</dimen>
     <dimen name="hud_header_icon_pad">12dp</dimen>
     <dimen name="hud_header_textsize">48sp</dimen>
-    <dimen name="hud_height">400dp</dimen>
     <dimen name="hud_height75_margin">50dp</dimen>
     <dimen name="hud_height80_margin">40dp</dimen>
     <dimen name="hud_height85_margin">30dp</dimen>
@@ -38,7 +37,6 @@
     <dimen name="hud_message_maxsize">100sp</dimen>
     <dimen name="hud_midword_maxsize">44sp</dimen>
     <dimen name="hud_text_granularity">4sp</dimen>
-    <dimen name="hud_width">640dp</dimen>
     <dimen name="hud_width75_margin">80dp</dimen>
     <dimen name="hud_width80_margin">64dp</dimen>
     <dimen name="hud_width85_margin">48dp</dimen>
@@ -116,8 +114,8 @@
         <item name="android:textStyle">bold</item>
     </style>
     <style name="hud_frame">
-        <item name="android:layout_width">@dimen/hud_width</item>
-        <item name="android:layout_height">@dimen/hud_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
         <item name="android:orientation">vertical</item>
         <item name="android:background">@color/hud_default_frame</item>
         <item name="android:padding">@dimen/hud_border</item>
