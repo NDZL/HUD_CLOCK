@@ -97,6 +97,7 @@ public class MainActivity extends AppCompatActivity implements ZebraHud.EventLis
         else hudImage.setImageBitmap(null);
 
          */
+        int zxc=0;
     }
 
     // ZebraHud.EventListener

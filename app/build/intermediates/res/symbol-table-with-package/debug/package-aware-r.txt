@@ -662,7 +662,10 @@ id async
 id beginning
 id blocking
 id bottom
+id btAdvanced
+id btBasic
 id btClickMe
+id btInterm
 id buttonPanel
 id center
 id center_horizontal
@@ -693,7 +696,6 @@ id group_divider
 id header_text
 id home
 id homeAsUp
-id hudimage
 id icon
 id icon_group
 id ifRoom
