@@ -663,7 +663,6 @@ id beginning
 id blocking
 id bottom
 id btAdvanced
-id btBasic
 id btClickMe
 id btInterm
 id buttonPanel
@@ -696,6 +695,8 @@ id group_divider
 id header_text
 id home
 id homeAsUp
+id hud_imageView
+id hud_textView
 id icon
 id icon_group
 id ifRoom
@@ -808,6 +809,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout custom_hud_layout
 layout hud_app_interrupted
 layout hud_frame
 layout hud_image
@@ -824,6 +826,9 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 mipmap ic_launcher
+raw i0
+raw i1
+raw i2
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

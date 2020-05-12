@@ -37,6 +37,8 @@ public class MainActivity extends AppCompatActivity implements ZebraHud.EventLis
     }
 
     Button btClickMe;
+    Button btIntermediateAPI;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,12 +52,37 @@ public class MainActivity extends AppCompatActivity implements ZebraHud.EventLis
         btClickMe.setOnClickListener(new View.OnClickListener() {
                                          @Override
                                          public void onClick(View view) {
-                                             hud.showMessage("CXNT48", "THIS IS HD4K "+ n++);
+                                             basicAPIExample();
                                          }
                                      }
-
-
         );
+
+        btIntermediateAPI = findViewById(R.id.btInterm);
+        btIntermediateAPI.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intermediateAPIExample();
+            }
+        });
+    }
+
+    void basicAPIExample(){
+        hud.showMessage("CXNT48", "THIS IS HD4000 "+ n++);
+    }
+
+    void intermediateAPIExample(){
+        View customView = hud.createHudView(R.layout.custom_hud_layout);
+        ImageView civ = customView.findViewById(R.id.hud_imageView);
+        TextView ctv = customView.findViewById(R.id.hud_textView);
+        switch (n%3) {
+            case 0:   civ.setImageResource(R.raw.i0); break;
+            case 1:   civ.setImageResource(R.raw.i1); break;
+            case 2:   civ.setImageResource(R.raw.i2); break;
+        }
+        ctv.setText("intermediateAPIExample - "+n++);
+
+        hud.showHudView( customView );
+
     }
 
     @Override
