@@ -1,0 +1,14 @@
+{
+  "ver": "1.0",
+  "showFrame": false,
+  "widgets": [
+    {
+      "sort": 70,
+      "note": "instruction string",
+      "position": [00,50, 100, 10],
+      "data": "Always choose the Zebra!",
+      "colorBack": "#A0111111",
+      "bold": true
+    }
+  ]
+}

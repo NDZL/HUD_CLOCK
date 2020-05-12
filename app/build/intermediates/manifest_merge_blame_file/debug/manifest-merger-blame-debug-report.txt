@@ -28,7 +28,7 @@
 17        android:allowBackup="true"
 17-->C:\dev\AndroidStudioProjects\ZebraHudSdk\DemoClock\app\src\main\AndroidManifest.xml:6:9-35
 18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-18-->[androidx.core:core:1.0.1] C:\Users\cxnt48\.gradle\caches\transforms-2\files-2.1\e9dd331d98e992b525484d967276a689\core-1.0.1\AndroidManifest.xml:22:18-86
+18-->[androidx.core:core:1.1.0] C:\Users\cxnt48\.gradle\caches\transforms-2\files-2.1\a83bef444c9240faa8e56c19819ce9ad\core-1.1.0\AndroidManifest.xml:24:18-86
 19        android:debuggable="true"
 20        android:icon="@mipmap/ic_launcher"
 20-->C:\dev\AndroidStudioProjects\ZebraHudSdk\DemoClock\app\src\main\AndroidManifest.xml:7:9-43

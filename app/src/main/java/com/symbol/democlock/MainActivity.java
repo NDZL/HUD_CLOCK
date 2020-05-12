@@ -16,6 +16,8 @@ import android.widget.TextView;
 
 import com.symbol.zebrahud.ZebraHud;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.lang.ref.WeakReference;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -38,6 +40,7 @@ public class MainActivity extends AppCompatActivity implements ZebraHud.EventLis
 
     Button btClickMe;
     Button btIntermediateAPI;
+    Button btAdvancedJsonAPI;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,6 +67,14 @@ public class MainActivity extends AppCompatActivity implements ZebraHud.EventLis
                 intermediateAPIExample();
             }
         });
+
+        btAdvancedJsonAPI = findViewById(R.id.btAdvanced);
+        btAdvancedJsonAPI.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                advancedJSONAPI();
+            }
+        });
     }
 
     void basicAPIExample(){
@@ -84,6 +95,29 @@ public class MainActivity extends AppCompatActivity implements ZebraHud.EventLis
         hud.showHudView( customView );
 
     }
+
+    public String loadJSONFromAsset() {
+        String json = null;
+        try {
+            InputStream is = getAssets().open("hudadv.json");
+            int size = is.available();
+            byte[] buffer = new byte[size];
+            is.read(buffer);
+            is.close();
+            json = new String(buffer, "UTF-8");
+        } catch (IOException ex) {
+            ex.printStackTrace();
+            return null;
+        }
+        return json;
+    }
+
+    void advancedJSONAPI(){
+        //must add to gradle=>   implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+
+        hud.showJim( loadJSONFromAsset() );
+    }
+
 
     @Override
     protected void onStart() {
