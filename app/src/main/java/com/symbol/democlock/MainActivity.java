@@ -3,6 +3,7 @@ package com.symbol.democlock;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity implements ZebraHud.EventLis
     Button btClickMe;
     Button btIntermediateAPI;
     Button btAdvancedJsonAPI;
+    Button btHudInterface;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,6 +75,14 @@ public class MainActivity extends AppCompatActivity implements ZebraHud.EventLis
             @Override
             public void onClick(View view) {
                 advancedJSONAPI();
+            }
+        });
+
+        btHudInterface = findViewById(R.id.btIntentAPI);
+        btHudInterface.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                hudInterfaceAPI();
             }
         });
     }
@@ -118,6 +128,12 @@ public class MainActivity extends AppCompatActivity implements ZebraHud.EventLis
         hud.showJim( loadJSONFromAsset() );
     }
 
+    void hudInterfaceAPI(){
+        //requires "HUD Interface (vX.X).apk" with overlay permission granted?
+        Intent i = new Intent("com.zebra.hudinterface.DISPLAY_TEXT_SINGLE_STRING");
+        i.putExtra("single_string.data", "SW&OS-TVT~END~CYAN~8");
+        sendBroadcast(i);
+    }
 
     @Override
     protected void onStart() {

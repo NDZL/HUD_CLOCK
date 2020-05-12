@@ -785,6 +785,7 @@ id blocking
 id bottom
 id btAdvanced
 id btClickMe
+id btIntentAPI
 id btInterm
 id buttonPanel
 id center_vertical

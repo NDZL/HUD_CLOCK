@@ -26,7 +26,7 @@ android:orientation="vertical" >
         android:text="JSON API" />
 
     <Button
-        android:id="@+id/btAdvanced"
+        android:id="@+id/btIntentAPI"
         android:layout_width="150dp"
         android:layout_height="70dp"
         android:text="INTENT API" />
