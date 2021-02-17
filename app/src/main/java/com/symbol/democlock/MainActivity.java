@@ -136,8 +136,11 @@ public class MainActivity extends AppCompatActivity implements ZebraHud.EventLis
 
     void hudInterfaceAPI(){
         //requires "HUD Interface (vX.X).apk" with overlay permission granted?
-        Intent i = new Intent("com.zebra.hudinterface.DISPLAY_TEXT_SINGLE_STRING");
-        i.putExtra("single_string.data", "SW&OS-TVT~END~CYAN~8");
+        Intent i = new Intent("com.symbol.zebrahudservice.DISPLAY_TEXT");
+        i.putExtra("text.text", "AppDev-TVT");
+        i.putExtra("text.size", "14");
+        i.putExtra("text.justification", "RIGHT");
+        i.putExtra("text.background_colour", "GREEN");
         sendBroadcast(i);
     }
 
