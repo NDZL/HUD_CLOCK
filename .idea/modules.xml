@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/DemoClock.iml" filepath="$PROJECT_DIR$/DemoClock.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ZebraHud/ZebraHud.iml" filepath="$PROJECT_DIR$/ZebraHud/ZebraHud.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/HUD_CLOCK.iml" filepath="$PROJECT_DIR$/.idea/modules/HUD_CLOCK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ZebraHud/HUD_CLOCK.ZebraHud.iml" filepath="$PROJECT_DIR$/.idea/modules/ZebraHud/HUD_CLOCK.ZebraHud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/HUD_CLOCK.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/HUD_CLOCK.app.iml" />
     </modules>
   </component>
 </project>

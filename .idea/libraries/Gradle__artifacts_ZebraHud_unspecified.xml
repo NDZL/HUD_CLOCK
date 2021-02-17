@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: artifacts:ZebraHud:unspecified">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ZebraHud/build/.transforms/cd7a2f6b683d2b2a4cdfbcdfa98d1afd/ZebraHud/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/ZebraHud/build/.transforms/cd7a2f6b683d2b2a4cdfbcdfa98d1afd/ZebraHud/res" />
+      <root url="file://$PROJECT_DIR$/ZebraHud/build/.transforms/cd7a2f6b683d2b2a4cdfbcdfa98d1afd/ZebraHud/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

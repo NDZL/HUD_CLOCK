@@ -1,5 +1,6 @@
 package com.symbol.democlock;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
@@ -29,6 +30,11 @@ public class MainActivity extends AppCompatActivity implements ZebraHud.EventLis
     static final String TIME_FORMAT = "HH:mm:ss";
     private ZebraHud hud = new ZebraHud();
     int n=0;
+
+    @Override
+    public void onPointerCaptureChanged(boolean hasCapture) {
+
+    }
 
 //    private byte[] cachedImage = null;
 //    private TextView viewText = null;
@@ -197,6 +203,11 @@ public class MainActivity extends AppCompatActivity implements ZebraHud.EventLis
     // ZebraHud.EventListener
     @Override
     public void onCameraImage(Bitmap bitmap) {
+    }
+
+    @Override
+    public void onCameraImageRawJpeg(@NonNull byte[] bytes) {
+
     }
 
     /*
