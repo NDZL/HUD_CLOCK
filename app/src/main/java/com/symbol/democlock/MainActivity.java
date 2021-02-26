@@ -15,6 +15,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.symbol.zebrahud.ZebraHud;
 
@@ -49,6 +50,7 @@ public class MainActivity extends AppCompatActivity implements ZebraHud.EventLis
     Button btIntermediateAPI;
     Button btAdvancedJsonAPI;
     Button btHudInterface;
+    Button btMic;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -91,7 +93,18 @@ public class MainActivity extends AppCompatActivity implements ZebraHud.EventLis
                 hudInterfaceAPI();
             }
         });
+
+        btMic = findViewById(R.id.btMic);
+        btMic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                queryMic();
+            }
+        });
+
+
     }
+
 
     void basicAPIExample(){
         hud.showMessage("CXNT48", "THIS IS HD4000 "+ n++);
@@ -142,6 +155,12 @@ public class MainActivity extends AppCompatActivity implements ZebraHud.EventLis
         i.putExtra("text.justification", "RIGHT");
         i.putExtra("text.background_colour", "GREEN");
         sendBroadcast(i);
+    }
+
+
+    private void queryMic() {
+        boolean bm = hud.getMicrophoneEnabled();
+        Toast.makeText(getApplicationContext(), bm ? "MIC is ON" : "MIC is OFF", Toast.LENGTH_SHORT).show(); ;
     }
 
     @Override

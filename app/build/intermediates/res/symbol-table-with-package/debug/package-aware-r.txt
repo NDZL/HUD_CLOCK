@@ -787,6 +787,7 @@ id btAdvanced
 id btClickMe
 id btIntentAPI
 id btInterm
+id btMic
 id buttonPanel
 id center_vertical
 id chains
